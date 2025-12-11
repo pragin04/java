@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter length of the cuboid: ");
+        double l = sc.nextDouble();
+
+        System.out.print("Enter width of the cuboid: ");
+        double w = sc.nextDouble();
+
+        System.out.print("Enter height of the cuboid: ");
+        double h = sc.nextDouble();
+
+        double surfaceArea = 2 * (l*w + l*h + w*h);
+        double volume = l * w * h;
+        double perimeter = 4 * (l + w + h);
+
+       
+        System.out.println("Surface Area: " + surfaceArea);
+        System.out.println("Volume: " + volume);
+        System.out.println("Perimeter (Total Edge Length): " + perimeter);
+
+        
+    }
+}
